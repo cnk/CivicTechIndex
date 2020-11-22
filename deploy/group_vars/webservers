@@ -1,0 +1,8 @@
+---
+python_version: python3
+ansistrano_deploy_to: /mnt/persist/www/civictechindex
+database_name: civictechindex
+database_user: civictechindex
+project_slug: civictechindex
+domain_stage: stage.civictechindex.org
+domain_prod: civictechindex.org
