@@ -8,3 +8,4 @@ wagtail==2.11.2
 wagtail-meta-preview
 wagtailfontawesome==1.2.1
 wagtail_headless_preview==0.1.4
+django_extensions

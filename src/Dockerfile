@@ -23,26 +23,27 @@ ENV PACKAGES="\
     alpine-sdk \
     libffi-dev \
     musl-dev \
-	postgresql-dev \
-	postgresql-libs \
-	linux-headers \
-	zlib-dev \
-	jpeg-dev \
+    postgresql-client \
+    postgresql-dev \
+    postgresql-libs \
+    linux-headers \
+    zlib-dev \
+    jpeg-dev \
 "
 
 RUN \
-	apk add --virtual .build-deps --no-cache --upgrade $PACKAGES \
-	&& echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" > /etc/apk/repositories \
-	&& echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
-	&& echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories  \
-	&& apk add \
-		gcc \
-        git \
-		gdal-dev \
-		geos-dev  \
-		gettext \
-		netcat-openbsd \
-		bash \
+        apk add --virtual .build-deps --no-cache --upgrade $PACKAGES \
+        && echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" > /etc/apk/repositories \
+        && echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
+        && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories  \
+        && apk add \
+                gcc \
+                git \
+                gdal-dev \
+                geos-dev  \
+                gettext \
+                netcat-openbsd \
+                bash \
     && pip install --upgrade pip \
     && pip install ipython --no-cache-dir \
     && pip install -r requirements/$REQUIREMENTS --no-cache-dir&& pip install pywatchman --no-cache-dir \

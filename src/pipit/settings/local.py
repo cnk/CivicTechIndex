@@ -27,6 +27,8 @@ if get_env_bool("DEBUG_TOOLBAR", default=True):
         "SHOW_TOOLBAR_CALLBACK": "pipit.settings.local.show_toolbar"
     }
 
+INSTALLED_APPS += ["django_extensions"]
+
 # Allow django-debug-bar under docker
 def show_toolbar(request):
     return True
