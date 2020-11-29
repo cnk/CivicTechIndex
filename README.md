@@ -1,5 +1,7 @@
 # CivicTechIndex
 
+This is an experiment in using [Wagtail-Pipit](https://github.com/Frojd/Wagtail-Pipit) for the [Civic Tech Index](http://civictechindex.org) project.
+
 
 ## Index
 
