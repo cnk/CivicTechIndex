@@ -16,20 +16,27 @@
         "test:ci": "jest -w 1 --ci"
     },
     "dependencies": {
+        "@material-ui/core": "^4.11.0",
+        "@material-ui/icons": "^4.9.1",
+        "@material-ui/lab": "^4.0.0-alpha.56",
         "@sentry/browser": "^5.24.2",
         "@sentry/integrations": "^5.24.2",
         "@sentry/node": "^5.24.2",
         "@sentry/webpack-plugin": "^1.13.0",
         "@svgr/webpack": "^5.4.0",
+        "@types/react": "^16.9.32",
         "@zeit/next-source-maps": "0.0.4-canary.1",
+        "axios": "^0.20.0",
+        "classnames": "^2.2.6",
         "i18next": "^19.6.0",
+        "material-ui-chip-input": "^2.0.0-beta.2",
         "next": "10.0.1",
         "next-compose-plugins": "^2.2.0",
+        "prop-types": "^15.7.2",
         "react": "17.0.1",
         "react-dom": "17.0.1",
-        "@types/react": "^16.9.32",
-        "classnames": "^2.2.6",
-        "prop-types": "^15.7.2"
+        "react-jss": "^10.1.1",
+        "react-router-dom": "^5.2.0"
     },
     "browserslist": {
         "production": [
